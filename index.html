@@ -1,140 +1,486 @@
-<link href="https://fonts.googleapis.com/css?family=Cairo|Scheherazade" rel="stylesheet">
-<style type="text/css">
-	body{
-		padding: 0px;
-		margin: 0px;
-		/*font-family: 'Scheherazade', serif;*/
-		font-family: 'Cairo', sans-serif;
-		color: #444;
-	}
-	.Loader{
-		width: 100%;
-		height:100vh;
-		background: #fff;
-		position: fixed;
-		z-index: 999999;
-	}
-	.cent{
-		position: absolute;
-	  	left:30%;
-	  	top:32%;
-
-	}
-	.sk-cube-grid {
-	  width: 60px;
-	  height: 60px;
-	  position: absolute;
-	  left:46%;
-	  top:46%;
-	  z-index: 9999999;
-	}
-
-	.sk-cube-grid .sk-cube {
-	  width: 33%;
-	  height: 33%;
-	  background-color: #e63b02;
-	  float: left;
-	  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-	          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
-	}
-	.sk-cube-grid .sk-cube1 {
-	  -webkit-animation-delay: 0.2s;
-	          animation-delay: 0.2s; }
-	.sk-cube-grid .sk-cube2 {
-	  -webkit-animation-delay: 0.3s;
-	          animation-delay: 0.3s; }
-	.sk-cube-grid .sk-cube3 {
-	  -webkit-animation-delay: 0.4s;
-	          animation-delay: 0.4s; }
-	.sk-cube-grid .sk-cube4 {
-	  -webkit-animation-delay: 0.1s;
-	          animation-delay: 0.1s; }
-	.sk-cube-grid .sk-cube5 {
-	  -webkit-animation-delay: 0.2s;
-	          animation-delay: 0.2s; }
-	.sk-cube-grid .sk-cube6 {
-	  -webkit-animation-delay: 0.3s;
-	          animation-delay: 0.3s; }
-	.sk-cube-grid .sk-cube7 {
-	  -webkit-animation-delay: 0s;
-	          animation-delay: 0s; }
-	.sk-cube-grid .sk-cube8 {
-	  -webkit-animation-delay: 0.1s;
-	          animation-delay: 0.1s; }
-	.sk-cube-grid .sk-cube9 {
-	  -webkit-animation-delay: 0.2s;
-	          animation-delay: 0.2s; }
-
-	@-webkit-keyframes sk-cubeGridScaleDelay {
-	  0%, 70%, 100% {
-	    -webkit-transform: scale3D(1, 1, 1);
-	            transform: scale3D(1, 1, 1);
-	  } 35% {
-	    -webkit-transform: scale3D(0, 0, 1);
-	            transform: scale3D(0, 0, 1); 
-	  }
-	}
-
-	@keyframes sk-cubeGridScaleDelay {
-	  0%, 70%, 100% {
-	    -webkit-transform: scale3D(1, 1, 1);
-	            transform: scale3D(1, 1, 1);
-	  } 35% {
-	    -webkit-transform: scale3D(0, 0, 1);
-	            transform: scale3D(0, 0, 1);
-	  } 
-	}
-	.item{
-		height: 100%;
-
-		float: right;
-		margin-right:5%;
-		text-align: center;
-	}
-	.texx{
-		padding-top: 25px;
-	    font-size: 33px;
-	    color: #e1400a;
-	}
-</style>
-<div class="Loader">
-	<div class="sk-cube-grid ">
-	  <div class="sk-cube sk-cube1"></div>
-	  <div class="sk-cube sk-cube2"></div>
-	  <div class="sk-cube sk-cube3"></div>
-	  <div class="sk-cube sk-cube4"></div>
-	  <div class="sk-cube sk-cube5"></div>
-	  <div class="sk-cube sk-cube6"></div>
-	  <div class="sk-cube sk-cube7"></div>
-	  <div class="sk-cube sk-cube8"></div>
-	  <div class="sk-cube sk-cube9"></div>
-	</div>
-</div>
+<!doctype html>
+<html dir="ltr" lang="ar"  >
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"  />
+        <meta name="keywords" content="Developer , Coder , Web Developer , Games Developer , Full-Stack Developer , PHP Developer">
+        <meta name="description" content="Full-Stack & Mobile Developer , WebGL, AngularJS, JQuery,, WebSockets, Node.js,CSS3, HTML5, Unity, GLSL ">
+        <meta name="author" content="Abdullah Altahery">
+        <meta name="copyright" content="Abdullah Altahery">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="content-type" content="text/html;UTF-8">
+        <meta http-equiv="cache-control" content="no-tcache">
+        <meta http-equiv="content-language" content="en">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<body>
-	<div id="preloader"></div>
-	<div class="cent" >
-		<img src="imgs/yetech_logo.png" style="width: 200px;margin-left: 32%;" >
-		<div style="    text-align: center;
-	    font-size: 21px;
-	    color: #555;">واي.تك لبرمجة وتطوير مواقع الويب وتطبيقات الهواتف , قريباً
-	    </div>
-	    <a href="./estra7ah_manager"><img src="imgs/estlogo.jpg" style="width: 200px;margin-left: 32%;" ></a>
-	</div>
-</body>
+        
+        <title>YeTech | واي.تيك</title>
 
-<script src="js/jq.js"></script>
-<script type="text/javascript">
-	$(window).load(function(){
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/bootstrap-rtl.css" rel="stylesheet">
+        
+        <link href="./css/font-awesome.min.css" rel="stylesheet">
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+       	<script src="js/jq.js"></script>
+    </head>
+	<body>
 
-		setTimeout(function(){
-			$(".Loader").fadeOut(function(){
+		<div class="Loader">
+			<div class="sk-cube-grid ">
+			  <div class="sk-cube sk-cube1"></div>
+			  <div class="sk-cube sk-cube2"></div>
+			  <div class="sk-cube sk-cube3"></div>
+			  <div class="sk-cube sk-cube4"></div>
+			  <div class="sk-cube sk-cube5"></div>
+			  <div class="sk-cube sk-cube6"></div>
+			  <div class="sk-cube sk-cube7"></div>
+			  <div class="sk-cube sk-cube8"></div>
+			  <div class="sk-cube sk-cube9"></div>
+			</div>
+		</div>
+		<div id="preloader"></div>
+
+
+		<!--<div class="cent" >
+			<img src="imgs/yetech_logo.png" style="width: 200px;margin-left: 32%;" >
+			<div style="    text-align: center;
+		    font-size: 21px;
+		    color: #555;">واي.تك لبرمجة وتطوير مواقع الويب وتطبيقات الهواتف , قريباً
+		    </div>
+		    <a href="./estra7ah_manager"><img src="imgs/estlogo.jpg" style="width: 200px;margin-left: 32%;" ></a>
+		</div>-->
+		<nav class="navbar nav_moving">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars"></span>
+					</button>
+					<a class="navbar-brand" href="#" >
+						<img  src="./imgs/yetech_logo.png" class="img-responsive" alt="بيكاليكا">
+						<span style="font-size: 11px;color: #696969;">لتطوير مواقع الويب وتطبيقات الموبايل</span>
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+				<style type="text/css">
+					.mnu{
+						    margin-top: 24px;
+					}
+					.mnu > a{
+					    margin: 11px;
+					    color: #696969;
+
+					    padding: 10px;
+					    
+					    text-align: center;
+					}
+					.bg{
+						background: url(./imgs/e7m.png);
+					    
+					    background-position-y: -100px;
+					    background-size: 100%;
+					    width: 100%;
+					    height: 100%;
+					    z-index: 0;
+					    position: absolute;
+					    opacity: 0.1
+					}
+					.nav_moving{
+						position: fixed;
+					    background: #fff;
+					    width: 100%;
+					    z-index: 9999;
+					    height: 100px;
+					}
+
+					.try_btn{
+						background: #0fbd54;
+						color:#fff;
+						float: left;
+						transition: 0.4s all ease;
+						font-size: 16px;
+    					padding: 13px;
+					    float: right;
+					    margin-right: 39px;
+					    margin-top: 15px;
+
+					}
+
+					.try_btn:hover{
+						background: #148e44;
+						color:#fff;
+					}
+
+					.lic_btn{
+						background: #0592e4;
+						color:#fff;
+						float: left;
+						margin-right: 20px;
+						transition: 0.4s all ease;
+						font-size: 16px;
+    					padding: 13px;
+					    float: right;
+					    margin-top: 15px;
+					}
+
+					.lic_btn:hover{
+						color:#fff;
+						background: #136696;
+					}
+				</style>
+					<div class="mnu">
+						<a class="pull-left hlink " datato="connect" href="javascript:void(0)"><span class="fa fa-phone"></span> تواصل معنا </a>
+						<a class="pull-left hlink " datato="support" href="javascript:void(0)"><span class="fa  fa-info-circle "></span> الدعم </a>
+						<a class=" pull-left hlink " datato="buy" href="javascript:void(0)"><span class="fa   fa-dollar"></span> تجربة ودفع </a>
+						<a class="pull-left hlink" datato="prods" href="javascript:void(0)"><span class="fa     fa-shopping-cart "></span> المنتجات </a>
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div style="overflow: hidden;background: rgba(16,39,77,1);
+		background: -moz-linear-gradient(-45deg, rgba(16,39,77,1) 0%, rgba(0,2,20,1) 100%);
+		background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(16,39,77,1)), color-stop(100%, rgba(0,2,20,1)));
+		background: -webkit-linear-gradient(-45deg, rgba(16,39,77,1) 0%, rgba(0,2,20,1) 100%);
+		background: -o-linear-gradient(-45deg, rgba(16,39,77,1) 0%, rgba(0,2,20,1) 100%);
+		background: -ms-linear-gradient(-45deg, rgba(16,39,77,1) 0%, rgba(0,2,20,1) 100%);
+		background: linear-gradient(135deg, rgba(16,39,77,1) 0%, rgba(0,2,20,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10274d', endColorstr='#000214', GradientType=1 );">
+			<div class="bg"></div>
+						<div style="
+						background: #e63d03;
+					    color: #fff;
+					    text-align: center;
+					    padding: 10px;
+					    transform: rotate(8deg);
+					    position: fixed;
+					    left: -6px;
+					    z-index: 9999;
+					    border-radius: 8px;
+					    top: 83px;
+					    font-size: 11px;
+    ">تخفيض 50% لاول خمسة عملاء</div>
+			<div class="container " id="prods">
+				<div class="row">
+					<div class="col-md-12 " style="color:#fff">
+						<div class="row">
+							<div class="col-md-8 col-xs-12 " style="color:#fff">
+								<div style="margin-top:130px;float: right;">
+									<h1 style="font-size:40px;">نقدم لك نظام Estra7ah Manager</h1>
+									<ul style="font-size:18px;">
+										<li>التحكم الكامل بسرعة المشاهدة وسرعه التنزيل للمستخدمين </li>
+										<li>يدعم اغلب الصيغ  المشهورة لملفات الفيديو</li>
+										<li>نظام ذكي يتعرف تلقائياً على الملفات والمجلدات</li>
+										<li>واجهة متجاوبة وتصميم مميز يناسب جميع المستخدمين</li>
+										<li>سريع الاستجابه حيث تم برمجته باحدث تقنيات الـ Video Streaming</li>
+										<li>يتميز بلوحة متعدده الخيارات وسهلة الاستخدام مع تصميم مميز وسهل </li>
+										<li>يدعم البث المباشر للقنوات مع اعادة البث لجميع اجهزة الشبكة بدون استهلاك الرصيد</li>
+										<li>يدعم الالعاب الفلاشية بدون الاتصال بالانترنت</li>
+										<li>يدعم الترجمات بصيغة srt تلقائياً </li>
+										<li>خاصية البحث الذكي في الاقسام والملفات </li>
+									</ul>
+									<button class="btn try_btn" style=""><span class="fa fa-windows"></span> جرّب النظام الان مجاناً</button>
+									<button class="btn lic_btn" style=""><span class="fa fa-copyright"></span> الرُخص المتاحة</button>
+									<script type="text/javascript">
+										$(".lic_btn").click(function(){
+											var offset = -120; //Offset of 20px
+										    $('html, body').animate({
+										        scrollTop: $("#buy").offset().top + offset
+										    }, 2000);
+										});
+										$(".hlink").click(function(){
+											var offset = -120; //Offset of 20px
+											var datato = $(this).attr("datato");
+										    $('html, body').animate({
+										        scrollTop: $("#"+datato).offset().top + offset
+										    }, 600);
+										});
+									</script>
+
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12 " style="color:#fff">
+								<img src="./imgs/e7m.jpg" style="margin-top: 134px;width: 102%;float: left;">
+							</div>
+						</div>
+
+						
+
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<style type="text/css">
+			.sec{
+				background: #fbfbfb;
+			    margin: 10px;
+			    border-radius: 5px;
+			    box-shadow: 0px 0px 3px #bbb;
+			}
+			.sec > .title{
+				font-size: 24px;
+			    color: #666;
+			    padding: 10px;
+			    text-align: center;
+			    font-weight: bold;
+			}
+			.sec > .icon{
+				    font-size: 30px;
+				    text-align: center;
+				    border: 1px solid #aaa;
+				    width: 45px;
+				    margin-left: auto;
+				    margin-right: auto;
+				    margin-top: 8px;
+				    margin-bottom: 8px;
+				    border-radius: 100%;
+
+			}
+			.sec > .mon{
+				text-align: center;
+			    border: 1px solid #eee;
+			    width: 58%;
+			    margin-left: auto;
+			    margin-right: auto;
+			    margin-bottom: 10px;
+			    border-radius: 8px;
+			    background: #fbfbfb;
+			    height: 30px;
+    			padding-top: 5px;
+
+
+			}
+			.sec > .dits{
+				padding:20px;
+			}
+			.sec > .dits > ul > li{
 				
+			    list-style-type: none;
+			    color: #fff;
+			    padding: 12px;
+			    margin: 3px;
+				list-style-type: none;
+			}
+			.wrn {
+				background: #675e5e;
+				color:#bbb;
+			}
+			.wrn-1{
+				background:#7e9274
+			}
+			.wrn-2{
+				background:#74b752
+			}			
+			.good{
+				background: #73d641
+			}
+			ul{
+				padding: 0px;
+			}
+		</style>
+		<div style="padding-top:100px;background: rgba(240,240,240,1);
+background: -moz-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(227,227,227,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(240,240,240,1)), color-stop(100%, rgba(227,227,227,1)));
+background: -webkit-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(227,227,227,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(227,227,227,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(227,227,227,1) 100%);
+background: linear-gradient(135deg, rgba(240,240,240,1) 0%, rgba(227,227,227,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e3e3e3', GradientType=1 );">
+			<div class="container" id="buy" style="">
+				<div class="row">
+					<div class="col-md-4 " >
+						
+							<div class="sec">
+								<div class="title"> ترخيص نهائي</div>
+								<div class="icon"><span class="fa  fa-rocket"></span></div>
+								<div class="mon"><b><span class="fa fa-dollar"></span> 80  فقط </b></div>
+								<div class="dits">
+									<ul>
+										<li class="good">يمكنك التمتع بكل الخصائص والميزات</li>
+										<li class="good">دعم متواصل في حال وجود مشاكل</li>
+										<li class="wrn-2">يمكنك التحديث لاصدارين جدد من النظام</li>
+										<li class="wrn-2">محدود ل 8 اشهر فقط</li>
+										<li class="wrn">لايتوفر ملف html لتعديل التصميم</li>
+									</ul>
+								</div>
+							</div>
+						
+					</div>
+					<div class="col-md-4 " >
+						
+							<div class="sec">
+								<div class="title"> ترخيص احترافي</div>
+								<div class="icon"><span class="fa  fa-suitcase"></span></div>
+								<div class="mon"><b><span class="fa fa-dollar"></span> 50  فقط </b></div>
+								<div class="dits">
+									<ul>
+										<li class="good">يمكنك التمتع بكل الخصائص والميزات</li>
+										<li class="good">دعم متواصل في حال وجود مشاكل</li>
+										<li class="wrn-1">يمكنك التحديث لاصدار واحده جديد من النظام</li>
+										<li class="wrn-1">محدود ل 4 اشهر فقط</li>
+										<li class="wrn">لايتوفر ملف html لتعديل التصميم</li>
+									</ul>
+								</div>
+							</div>
+						
+					</div>
+					<div class="col-md-4 " >
+						<div class="sec">
+							<div class="title"> ترخيص محلي</div>
+							<div class="icon"><span class="fa fa-home"></span></div>
+							<div class="mon"><b><span class="fa fa-dollar"></span> 30  فقط </b></div>
+							<div class="dits">
+								<ul>
+									<li class="good">يمكنك التمتع بكل الخصائص والميزات</li>
+									<li class="good">دعم متواصل في حال وجود مشاكل</li>
+									<li class="wrn">لا يمكنك التحديث لاصدار جديد</li>
+									<li class="wrn">محدود لشهرين فقط</li>
+									<li class="wrn">لايتوفر ملف html لتعديل التصميم</li>
+								</ul>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 " >
+						<div class="sec" id="support" style="padding: 40px;">
+							<h3>متطلبات النظام (للسيرفر) :</h3>
+							<ul>
+								<li>ويندوز 7 او احدث</li>
+								<li>معالج Dual Core  او احدث</li>
+								<li>ذاكرة عشوائية بحجم 2 جيجا او اكثر (ليدعم الـStreaming)</li>
+								<li>مساحة 300 ميجا بايت فارغة لتحميل النظام </li>
+							</ul>
+							<h3>متطلبات النظام (للعميل) :</h3>
+							<ul>
+								<li>اي متصفح انترنت حديث </li>
+								
+							</ul>
+						</div>
+						<div class="sec" id="connect" style="padding: 20px;">
+							لطلب النسخه ارسل راسله طلب الى الايميل YeTech.Devs@gmail.com مع الترخيص المطلوب وسيتم اعلامك ببيانات الدفع (نتعامل بالتحويل الى الكريمي حالياً) 
+							<div style="margin:20px;padding: 20px;background: #eee;"><a href="mailto:YeTech.Devs@gmail.com">YeTech.Devs@gmail.com</a></div>
+						</div>
+					</div>
+					<div class="col-md-6 " >
+						<div class="sec">
+							<div class="title"> ترخيص نهائي كامل</div>
+							<div class="icon"><span class="fa fa-trophy"></span></div>
+							<div class="mon"><b><span class="fa fa-dollar"></span> 120  فقط </b></div>
+							<div class="dits">
+								<ul>
+									<li class="good">يمكنك التمتع بكل الخصائص والميزات</li>
+									<li class="good">دعم متواصل في حال وجود مشاكل</li>
+									<li class="good">يمكنك التحديث لـ 3 اصدارات جديدة  من النظام</li>
+									<li class="good">غير محدود .. مدى الحياة !!</li>
+									<li class="good">توفير الملف المصدري html للتعديل على التصميم</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		
+			<div style="padding:20px;">
+				<div class="container">
+					<div class="sec" style="background: #333333;color: #fff;border-top:9px solid #74bc28">
+						<div class="row">
+							<div class="col-md-8 " >
+								<div style="    padding: 57px;">
+									<h1>في الاصدار القادم</h1>
+									<ul style="font-size: 15px;">
+										<li>سيتم اضافة نظام المكتبه لتوفير بيئة مناسبة للقرائة والبحث في الكتب تدعم الهواتف </li>
+										<li>دعم صيغ اكثر واضافة ثيمات جديدة للاستراحة</li>
+										<li>انشاء نظام ادارة مستخدمين لدعم التعليقات والتقييم</li>
+										<li>انشاء دردشه عامه بين مستخدمين الشبكة مع لوحة ادارية لمدير الشبكة</li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="col-md-4 " >
+								<div style="float: left;overflow: hidden;"><img style="width:160%" src="./imgs/new_bg.png"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(235,235,235,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0 );">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 " >
+						<div class="row">
+							<div style="padding: 20px;">
+								<div class="col-md-4 " >
+									<img style="width: 71%;" src="./imgs/yetech_logo_trans.png">
+									
+								</div>
+								<div class="col-md-4 " style="margin-top: 20px;" >
+									<div>واي.تيك هي شركة يمنية ناشئة  لتطوير مواقع الويب وتطبيقات الموبايل 
+										نقدم حلول ذكية ومناسبه لعملائنا .
+									</div>
+								</div>
+								<div class="col-md-4 " style="margin-top: 20px;" >
+	
+									<ul>
+										<li>نحتاج مبرمجين FULL Stack NodeJS + Express ارسل السيرة الذاتيه الى 
+											<a href="mailto:salim.alqadasi@gmail.com">salim.alqadasi@gmail.com</a>
+										</li>
+										<li>لطلب نسخه من النظام ارسل رسالة الى  
+											<a href="mailto:YeTech.Devs@gmail.com">YeTech.Devs@gmail.com</a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="col-md-12 " style="text-align: center;" >
+								جميع الحقوق محفوظة YeTech <span class="fa fa-copyright"></span> 2017
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- js -->
+
+		
+		
+		<script src="js/tether.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+
+				setTimeout(function(){
+					$(".Loader").fadeOut(function(){
+						
+					});
+				},1000);
+
 			});
-		},1000);
-
-	});
-</script>
+		</script>
+	</body>
 
 
+
+</html>
