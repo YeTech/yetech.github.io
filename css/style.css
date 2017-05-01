@@ -1,17 +1,34 @@
-	@font-face {
-	  font-family: 'ltbukralight';
-	  font-style: normal;
-	  font-weight: 400;
-	  src: url(./css/fonts/29ltbukralight.ttf) format('ttf');
 
+	@font-face {
+	    font-family: 'hdf';
+	    src: url('./fonts/hdf.ttf') format('truetype');
+	    font-style: normal;
 	}
-	body{
-		padding: 0px;
-		margin: 0px;
-		/*font-family: 'Scheherazade', serif;*/
-		font-family: "Segoe UI", Tahoma, sans-serif;
-		color: #444;
+	@font-face {
+	    font-family: 'cpanel-sego-light';
+	    src: url('./fonts/segoe.ui.light.ttf') format('truetype');
+	    font-style: normal;
 	}
+	@font-face {
+	    font-family: 'cpanel-sego-medium';
+	    src: url('./fonts/segoe.ui.medium.ttf') format('truetype');
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'cpanel-sego-bold';
+	    src: url('./fonts/segoe.ui.bold.ttf') format('truetype');
+	    font-style: normal;
+	}
+
+   		body{
+        background: #111;
+        color:#eee;
+        font-family: cpanel-sego-light;
+   		}
+   		.row {
+            margin: 0px;
+            padding:0px;
+      }
 	.Loader{
 		width: 100%;
 		height:100vh;
@@ -118,17 +135,7 @@
 	    
 	    text-align: center;
 	}
-	.bg{
-		background: url(../imgs/e7m.jpg);
-	    
-	    background-position-y: -100px;
-	    background-size: 100%;
-	    width: 100%;
-	    height: 100%;
-	    z-index: 0;
-	    position: absolute;
-	    opacity: 0.1
-	}
+
 	.nav_moving{
 		position: fixed;
 	    background: #fff;

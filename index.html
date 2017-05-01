@@ -22,27 +22,620 @@
         <link href="./css/font-awesome.min.css" rel="stylesheet">
         <link href="./css/normalize.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
        	<script src="js/jq.js"></script>
-       	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Rakkas" rel="stylesheet">
+        
        	<style type="text/css">
 
-			@font-face {
-			    font-family: 'hdf';
-			    src: url('./css/fonts/hdf.ttf') format('truetype');
-			    font-style: normal;
-			}
-       		body{
-       			background: #222;
+    			
 
-       		}
-       		.shadowbg{
-				box-shadow: 0px 0px 100px 60px #0f0f0f inset;
-				height: 100vh;
-				width: 100%;
-				position: absolute;
-				z-index: 1;
-	        }
-	        .boxofimage > .texts{
+       	</style>
+    </head>
+	<body >
+		
+		<div class="Loader">
+			<div class="sk-cube-grid ">
+			  <div class="sk-cube sk-cube1"></div>
+			  <div class="sk-cube sk-cube2"></div>
+			  <div class="sk-cube sk-cube3"></div>
+			  <div class="sk-cube sk-cube4"></div>
+			  <div class="sk-cube sk-cube5"></div>
+			  <div class="sk-cube sk-cube6"></div>
+			  <div class="sk-cube sk-cube7"></div>
+			  <div class="sk-cube sk-cube8"></div>
+			  <div class="sk-cube sk-cube9"></div>
+			</div>
+		</div>
+		<div id="preloader"></div>
+    <style type="text/css">
+      .bg{
+        background-image: url(https://s-media-cache-ak0.pinimg.com/originals/39/40/02/39400223770a417ea3f634e3f895c1c8.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        filter: grayscale(50%);
+
+        box-shadow: 1px 1px 240px 63px #000;
+      }
+
+      header {
+            padding: 180px 0 110px 0;
+      }
+      
+      .dark-nav{
+        background: none;
+        border:none;
+      }
+      .navbar-default .navbar-nav>li>a{
+        color: #fff;
+        font-family: cpanel-sego-medium;
+      }
+      .navbar-default .navbar-nav>li>a:hover{
+        color: #aaa;
+      }
+      .head-logo{
+        text-align: center;
+        font-size: 53px;
+        font-family: hdf;
+        margin-top: -43px;
+      }
+      .ara{
+        font-family: 'Rakkas', cursive;
+      }
+      .navbar-default .navbar-brand{
+        color: #fff;
+        font-family: cpanel-sego-medium;
+      }
+      .dnbtn{
+        color: #fff;
+        background: #12ea24;
+        font-size: 15px;
+        font-family: cpanel-sego-bold;
+      }
+      .dnbtnr{
+        color: #fff;
+        background: #ea1212;
+        font-size: 15px;
+        font-family: cpanel-sego-bold;
+      }
+      .dnbtn:hover{
+        background: #00af07;
+        color: #fff;
+      }
+      .dnbtnr:hover{
+        background: #ad0000;
+        color: #fff;
+      }
+      .navbar{
+        background: none;
+        border: none;
+      }
+      .cont{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#380038+0,11050e+100 */
+      background: #380038; /* Old browsers */
+      background: -moz-linear-gradient(-45deg, #380038 0%, #11050e 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, #380038 0%,#11050e 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg, #380038 0%,#11050e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#380038', endColorstr='#11050e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        padding:20px;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom:80px; 
+      }
+      .cleft{
+        text-align: left;
+      }
+      .cright{
+        text-align: right;
+      }
+      ul{
+            direction: rtl;
+      }
+      .cont2{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1c1c1c+1,000111+100 */
+        background: #1c1c1c; /* Old browsers */
+        background: -moz-linear-gradient(top, #1c1c1c 1%, #000111 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #1c1c1c 1%,#000111 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #1c1c1c 1%,#000111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#000111',GradientType=0 ); 
+        padding:20px;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom:80px; 
+      }
+      .cont3{
+         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#210920+0,260c2b+44,11050e+100 */
+          background: #210920; /* Old browsers */
+          background: -moz-radial-gradient(center, ellipse cover, #210920 0%, #260c2b 44%, #11050e 100%); /* FF3.6-15 */
+          background: -webkit-radial-gradient(center, ellipse cover, #210920 0%,#260c2b 44%,#11050e 100%); /* Chrome10-25,Safari5.1-6 */
+          background: radial-gradient(ellipse at center, #210920 0%,#260c2b 44%,#11050e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#210920', endColorstr='#11050e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        padding:20px;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom:80px; 
+      }
+    </style>
+   <nav class="navbar navbar-default navbar-fixed-top scroll-nav dark-nav scroll-fixed-nav" role="navigation">
+    <div class="container">
+      
+    
+      <div class="navbar-header" style="float: left;">
+        <div class="navbar-brand logo" href="#">
+          YeTech.Developers
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        
+      </div> 
+      
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+        <ul class="nav navbar-nav navbar-right" id="nav">
+          <li class="current"><a datato="#home" href="javascript:void(0)">الرئيسية</a></li>
+          <li><a class="hlink" datato="#features" href="javascript:void(0)">المميزات</a></li>
+          <li><a class="hlink" datato="#pricing" href="javascript:void(0)">التسعيرات</a></li>
+          <li><a class="hlink" datato="#reqs" href="javascript:void(0)">متطلبات النظام</a></li>
+          <li><a class="hlink" datato="#whyem" href="javascript:void(0)">لماذا نظام Estra7ah Manager</a></li>
+          <li><a class="hlink" datato="#contact" href="javascript:void(0)">تواصل معنا</a></li>
+          <script type="text/javascript">
+            
+            $(".hlink").click(function(){
+              var offset = -120; //Offset of 20px
+              var datato = $(this).attr("datato");
+                $('html, body').animate({
+                    scrollTop: $(datato).offset().top + offset
+                }, 600);
+            });
+          </script>
+
+        </ul>
+      </div> 
+      
+    </div> 
+  </nav>
+  <script type="text/javascript">
+
+    $(window).scroll(function(e){
+      if($(window).scrollTop()>50){
+        $(".navbar").css("position","fixed");
+        $(".navbar").css("background","#232323");
+        $(".navbar").css("z-index","9999");
+        $(".navbar").css("border","1px solid #1f1f1f");
+      }else{
+        $(".navbar").css("position","absolute");
+        $(".navbar").css("background","none");
+        $(".navbar").css("border","none");
+      }
+    });
+  </script>
+    <header class="header bg" id="home"  >
+
+
+      <div class="container">
+        <div class="row v-align-children">
+          <div class="col-md-12 col-sm-12">
+            <div style="margin-top: 20px;">
+              <h1 class="head-logo ara">استراحة مانجر</h1>
+              <h1 class="head-logo">EstravahManager</h1>
+              
+            </div>
+            
+          </div>
+          <div class="col-md-5 col-sm-12">
+          
+            <!-- HEADING TEXT -->
+            <div class="intro-text-2">
+
+              
+              <h2 style="font-family: cpanel-sego-bold">تمتع باستراحة تنافس المواقع العالميه! <span style="font-size:15px;">(بدون انترنت!)</span></h2>
+              <p>
+                نظام Estra7ah Manager يقدم لك حل نهائي وكامل لادارة الاستراحة ويقدم لزبائنك افضل خدمة لتوصيل المحتوى في شبكة الوايرلس او مقهى الانترنت او حتى في حيكم الصغير .
+              </p>
+              
+              <!-- BUTTON -->
+              <div class="download-cta">
+              
+                <a href="#" class="btn btn-play-store dnbtn"><i class="fa fa-spinner fa-spin"></i> يتم انشاء نسخه مجانية</a>
+                <a href="#" class="btn btn-app-store dnbtnr"><i class="fa fa-shopping-cart "></i>طلب نسخه لشبكتك</a>
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-7 col-sm-12">
+          
+            <div class="header-2-img text-center" style=" ">
+              <img src="./imgs/header-1-img.png" alt="" class="img-reponsive" style="width: 158%;margin: 20px;width: 103%;">
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="cont" id="features" >
+        <div class="row">
+          <div class="col-sm-12 ">
+            <div style="font-size:40px;margin-bottom: 20px;" >المميزات التي ستحصل عليها</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 cleft">
+          <style type="text/css">
+            .fealistleft{
+              margin-right: 10%;
+            }
+            .fealistleft > li{
+              
+              padding-top: 20px;
+              text-align: right;
+            }
+            .fealistright{
+              margin-right: 10%;
+            }
+            .fealistright > li{
+              
+              padding-top: 20px;
+              text-align: right;
+            }
+            .newi{
+              background: #ff5757;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 20px;
+              padding-bottom: 2px;
+              font-size: 12px;
+              font-family: cpanel-sego-bold;
+            }
+          </style>
+            <ul class="fealistleft">
+              <li>خصائص واحصائيات -لحظياً- لمتابعه عدد الدخول والخروج والشات . <span class="newi">جديد</span></li>
+              <li>نظام طباعه كروت احترافي مفصول عن المايكروتك لتخفيف الضغط ويدعم الكثير من الخصائص والاعدادات التي تحتاجها لطباعه كروت خاصه بالاستراحه مع امكانيه تحديد سرعه المشاهده وكميه التنزيل لكل كرت . <span class="newi">جديد</span></li>
+              <li>في الاصدار الثالث يمكنك انشاء شريط الاخبار بشكل ديناميكي واضافة الحصريات للاستراحه مع خصائص رائعه . <span class="newi">جديد</span></li>
+              <li>يمكنك مزامنة ملفاتك وافلامك بضغطه زر واحده .. لاستيرات التقييمات من الانترنت مثل IMDB مره واحدة لتعطي زبائنك تجربه رائعه! . <span class="newi">جديد</span></li>
+              <li>يمكنك اضافة الالبومات الصوتيه والافلام والمسلسلات بكل سهوله وكذالك ادارة وانشاء النسخ الاحتياطيه واستعادتها . </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <img src="./advs/admin.png" style="width: 100%;">
+            <div style="font-size:30px;">انطلق بشبكتك الى القمّه <br><span style="font-size: 16px;" >بسعر رمزي يبدا من 20 دولار فقط! </span></div>
+          </div>
+          <div class="col-sm-4 cright">
+            <ul class="fealistright">
+              <li>في الاصدار الثالث غيرنا سياسه القوالب .. الان يمكنك طلب قالب خاص بشبكتك بسعر رمزي يبدا من 10 $ دولار .. القالب الحالي متجاوب ويدعم كل الاجهزه ويناسب كل المستخدمين . <span class="newi">جديد</span></li>
+                <li>تم تحسين جوده العرض للافلام وتم اضافة خاصيه الحلقات للمسلسلات حيث يمكن لزبائنك متابعه مسلسلات استراحتك بكل سهوله . </li>
+                <li>عبر نظام Estra7ah Manager يوجد نظام شات كامل خاص بالشبكه وبدون انترنت مع امكانيه اختيار بصور رمزيه والمراسله لحظياً . <span class="newi">جديد</span></li>
+                <li>البث المباشر يدعم روابط IPTV وكذالك يدعم اجزه البث مثل EasyCap من الدش مباشره الى الزبائن! . <span class="newi">جديد</span></li>
+                <li>يمكنك الان اضافة متجر تطبيقات خاص بالاستراحه مع احصائيات المشاهده والتنزيل . </li>
+                <li>اضفنا العاب html5 والعاب flash ليدعم جميع الاجهزه ويمكنك بكل سهوله اضافة وحذف الالعاب .</li>
+
+            </ul>
+          </div>
+
+        </div>
+    </div>
+    <div class="cont2" id="whyem" >
+        <div class="row">
+          <div class="col-sm-12 ">
+            <div style="font-size:40px;margin-bottom: 20px;direction: rtl" >لماذا ستختار نظام Estra7ah Manager ؟!</div>
+          </div>
+        </div>
+        <div class="row">
+         
+          <style type="text/css">
+            .fealistleft{
+              margin-right: 10%;
+            }
+            .fealistleft > li{
+              
+              padding-top: 20px;
+              text-align: right;
+            }
+            .fealistright{
+              margin-right: 10%;
+            }
+            .fealistright > li{
+              
+              padding-top: 20px;
+              text-align: right;
+            }
+            .newi{
+              background: #ff5757;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 20px;
+              padding-bottom: 2px;
+              font-size: 12px;
+              font-family: cpanel-sego-bold;
+            }
+          </style>
+          <div class="col-sm-6 cright">
+            <ul class="fealistright" style="font-size: 17px;">
+              <li>شبكتك اهتمامنا الاول ! .. سندعمك على مدى استخدامك للنظام ونصلح المشاكل بشكل متواصل . </li>
+                <li>نهتم بالجودة اولاً ..نظامنا مبني بافضل تقنيات توصيل المحتوى المتواجده في السوق العالمي .. وفرنا لك هذا النظام ليعطيك تجربه عالميه في شبكتك المحليه .</li>
+                <li>نظامنا ليس محدود فقط بتوصيل الصوت والصورة .. ندعم كذالك شات جماعي يدعم الكثير من المستخدمين وكذالك يمكنك اضافة مكتبه خاصه بشبكتك وقرائه وتنزيل الكتب .</li>
+                <li>فريقنا يعمل بشكل متواصل لتطوير النظام  .. معنا تستطيع التمتع باحدث الخصائص والقوالب لشبكتك سوى قوالب مجانيه او مدفوعه وكذالك يمكنك طلب اضافات خاصه مجاناً! . </li>
+
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <img src="./imgs/lab2.png" style="width: 100%;">
+          </div>
+
+
+        </div>
+    </div>
+
+    <div class="cont3"  id="pricing" >
+      <div class="row">
+          <div class="col-sm-12 ">
+            <div style="font-size:40px;margin-bottom: 20px;direction: rtl" >اختر رخصة مناسبة لشبكتك</div>
+          </div>
+        </div>
+        <div class="row">
+         
+          <style type="text/css">
+            .fealistleft{
+              margin-right: 10%;
+            }
+            .fealistleft > li{
+              
+              padding-top: 20px;
+              text-align: right;
+            }
+            .fealistright{
+              margin-right: 10%;
+            }
+            .fealistright > li{
+              
+              padding-top: 20px;
+              text-align: right;
+            }
+            .newi{
+              background: #ff5757;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 20px;
+              padding-bottom: 2px;
+              font-size: 12px;
+              font-family: cpanel-sego-bold;
+            }
+
+            *,
+            *:before,
+            *:after {
+              -moz-box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              -moz-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+              -o-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+              -webkit-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+              transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+            }
+
+            body {
+              background: #111;
+              
+            }
+            .alldiv{
+              font-size: 100%;
+              padding: 3em 0;
+              width: 80%;
+              margin:auto;
+            }
+            .promos {
+              max-width: 1140px;
+              margin: 0 auto;
+
+            }
+
+            .promo {
+              margin: 1em .5em 1.625em;
+              padding: .25em 0 2em;
+              background: #252525;
+
+              font-weight: 400;
+              line-height: 1.625;
+              color: #f9f9f9;
+              text-align: center;
+            }
+            @media (min-width: 40em) {
+              .promo {
+                display: inline;
+                float: left;
+                width: 33.333%;
+                margin: 1em 0 0;
+              }
+              .promo.first {
+                border-right: none;
+              }
+              .promo.second {
+                float: right;
+                border-left: none;
+              }
+            }
+            .promo h4 {
+              margin: .25em 0 0;
+              font-size: 170%;
+              font-weight: normal;
+            }
+            .promo .features {
+              margin: 0;
+              padding: 0;
+              list-style-type: none;
+              color: #999999;
+            }
+            .promo li {
+              padding: .25em 0;
+              font-size: 12px;
+            }
+
+            .promo .brief {
+              color: #f9f9f9;
+            }
+            .promo .price {
+              margin: .5em 0;
+              padding: .25em 0;
+              background: #30a555;
+              font-size: 250%;
+              color: #f9f9f9;
+            }
+            .promo .price .over{
+               text-decoration: line-through;
+               font-size: 12px;    
+               margin-top: -11px;
+               opacity: 0.5;
+            }
+            .promo .buy {
+              margin: 1em 0 0;
+            }
+            .promo button {
+              padding: 1em 3.25em;
+              border: none;
+              border-radius: 40px;
+              background: #292b2e;
+              color: #f9f9f9;
+              cursor: pointer;
+            }
+            .promo button:hover {
+              background: #27282b;
+            }
+
+            .scale button {
+              background: #30a555;
+            }
+            .scale button:hover {
+              background: #1e7339;
+            }
+            @media (min-width: 40em) {
+              .scale {
+                transform: scale(1.2);
+                box-shadow: 0 0 4px 1px rgba(20, 20, 20, 0.8);
+              }
+              
+            }
+
+          </style>
+          <div class="col-sm-12 cright" style="margin-bottom: 6%;">
+            <div class="alldiv">
+              <div class="promos">  
+                  <div class="promo first">
+                      <h4>ترخيص محلي</h4>
+                      <ul class="features">
+                          <li class="brief">مناسب للشبكات الصغيرة</li>
+                          <li class="price" style="background: #536747;">$10<div class="over">$20</div></li>
+                          <li>يمكنك التمتع بكل الخصائص والمميزات</li>
+                          <li>دعم متواصل في حال وجود مشاكل</li>
+                          <li>تحديثات امنية واصلاحات فقط</li>
+                          <li>بدون تركيب النظام لشبكتك</li>
+                          <li>محدود 6 اشهر</li>
+                          <li class="buy"><button>طلب رخصة</button></li>   
+                      </ul>
+                  </div>
+                  <div class="promo second">
+                      <h4>ترخيص نهائي</h4>
+                      <ul class="features">
+                          <li class="brief">مناسب للشبكات المتوسطة</li>
+                          <li class="price" style="background: #468846;">$30<div class="over">$40</div></li>
+                          <li>يمكنك التمتع بكل الخصائص والمميزات</li>
+                          <li>دعم متواصل في حال وجود مشاكل</li>
+                          <li>تحديثات امنية واصلاحات و اضافات</li>
+                          <li>بدون تركيب النظام لشبكتك</li>
+                          <li>محدود ل سنة</li>
+                          <li class="buy"><button>طلب رخصة</button></li>  
+                      </ul>
+                  </div>
+                  <div class="promo third scale">
+                      <h4>نهائي كامل</h4>
+                      <ul class="features">
+                          <li class="brief">مناسب للشبكات الكبيره</li>
+                          <li class="price">$80<div class="over">$100</div></li>
+                          <li>يمكنك التمتع بكل الخصائص والمميزات</li>
+                          <li>دعم متواصل في حال وجود مشاكل</li>
+                          <li>تحديثات امنية واصلاحات و اضافات</li>
+                          <li>بدون تركيب النظام لشبكتك</li>
+                          <li>غير محدود (مدى الحياة)</li>
+                          <li class="buy"><button>طلب رخصة</button></li> 
+                      </ul>
+                  </div>  
+                  <script type="text/javascript">
+                    $(".buy").click(function(){
+                        var offset = -120; 
+                       
+                        $('html, body').animate({
+                            scrollTop: $("#contact").offset().top + offset
+                        }, 600);
+                    })
+                  </script>
+               </div>
+            </div>
+
+          </div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <div class="cont3" id="reqs" style="background:#fff;color: #000;margin:0px;padding-top: 6%;padding-bottom: 10px;" >
+            <div class="row">
+              <div class="col-sm-12 ">
+                <div style="font-size:40px;direction: rtl" >متطلبات النظام</div>
+              </div>
+              <div style="padding: 40px;text-align: right">
+
+                <div class="col-xs-6 ">
+                  <h1>متطلبات النظام (للسيرفر) :</h1>
+                  <ul style="">
+                    <li>ويندوز 7 او احدث</li>
+                    <li>معالج Intel® Core™ i3  او احدث</li>
+                    <li>ذاكرة وصول عشوائي بحجم 1.5 جيجا او اكثر (ليدعم الـStreaming)</li>
+                    <li>مساحة 350 ميجا بايت فارغة لتحميل النظام </li>
+                  </ul>
+                  <h1>متطلبات النظام (للعميل) :</h1>
+                  <ul >
+                    <li>اي متصفح انترنت حديث </li>
+                  </ul>
+                </div>
+                <div class="col-xs-6 ">
+                <img src="./advs/8.jpg">
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cont3" id="contact"  style="background:#fff;color: #000;padding-bottom: 6%;padding-top: 10px;" >
+            <div class="row">
+              <div class="col-sm-12 ">
+                <div style="font-size:40px;margin-bottom: 20px;direction: rtl;font-family: cpanel-sego-bold" >اطلب رخصتك الان</div>
+              </div>
+              <div class="col-sm-12 cright" >
+                <div style="font-size: 20px;">
+                  
+                  <div style="text-align: center;">
+                    <div> بريدنا الالكتروني : <a href="mailto:yetech.devs@gmail.com" style="color: #000">Yetech.devs@gmail.com</a></span></div>
+                    <span>او عبر المهندس <b>محمد المسقري</b> : <span style="direction: ltr;text-align: left">714741061</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style type="text/css">
+            .shadowbg{
+            box-shadow: 0px 0px 100px 60px #0f0f0f inset;
+                height: 300px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+          }
+          .boxofimage > .texts{
                 position: absolute;
                 z-index: 999;
                 color: #fff;
@@ -84,8 +677,7 @@
               color:#f9f9f9;
               text-align: center;
               z-index: 99;
-              font-family: headerFont;
-              font-size:60px;
+              
               width: 100%;
               
               top: 30%;
@@ -101,7 +693,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                height: 100vh;
+                height: 300px;
 
                 max-width: 1920px;
                 overflow: hidden;
@@ -148,77 +740,111 @@
               
             }
             #timed{
-            	font-family: monospace;
-            	font-size: 30px;
+              font-family: monospace;
+              font-size: 30px;
 
             }
-       	</style>
-    </head>
-	<body >
-		
-		<div class="Loader">
-			<div class="sk-cube-grid ">
-			  <div class="sk-cube sk-cube1"></div>
-			  <div class="sk-cube sk-cube2"></div>
-			  <div class="sk-cube sk-cube3"></div>
-			  <div class="sk-cube sk-cube4"></div>
-			  <div class="sk-cube sk-cube5"></div>
-			  <div class="sk-cube sk-cube6"></div>
-			  <div class="sk-cube sk-cube7"></div>
-			  <div class="sk-cube sk-cube8"></div>
-			  <div class="sk-cube sk-cube9"></div>
-			</div>
-		</div>
-		<div id="preloader"></div>
-		<div class="header" >
+          </style>
 
-		      <div class="abs" >
-				<script>
+          <div class="col-sm-12 cright" style="padding: 0px;">
+            <div class="logo-str">
+                <div class="row nopadding" style="margin:0px">
+                  <div class="col-sm-12">
 
-				var cdown = new Date("May 1, 2017 12:00:00").getTime();
+                     <div class="head-logo" style="margin-top: 50px;">EstravahManager</div>
+                     <div>تمتع بخدمة تليق بشبكتك!</div>
+                     <div>
+                     <style type="text/css">
+                       @media only screen and (min-width: 700px) {
+                          .cicon{
+                            width: 56px;
+                          }
+                          .ciconp{
+                            width: 144px;
+                          }
+                          .iconsholder{
+                            margin: auto;
+                          }
+                        }
+                        .cicon{
+                          margin: 10px;
+                          padding: 13px;
+                          background: #aaa;
+                          color: #191919;
+                          
+                          text-align: center;
+                          
+                          font-size: 23px;
+                          border-radius: 5px;
+                          transition: all .4s ease;
+                          cursor: pointer;
+                        }
+                        .ciconp{
+                          margin: 10px;
+                          color: #191919;
+                          text-align: center;
+                         
+                          border-radius: 5px;
+                          transition: all .4s ease;
+                          cursor: pointer;
 
-				var done = setInterval(function() {
+                          font-size: 17px;
+                          padding: 0px;
+                          background: #aaa;
+                        }
+                        .cicon:hover{
+                          background: #333;
+                          color: #eee;
+                        }
+                        @media only screen and (max-width: 700px) {
 
-				  var now = new Date().getTime();
+                          .cicon{
+                            width: 93%;
+                          }
+                          .iconsholder{
+                            width: 100%;
+                            margin: auto;
+                          }
+                          .ciconp{
+                            width: 93%;
+                          }
+                        }
+                     </style>
+                     <center>
+                        <div class="iconsholder">
+                            <a href="https://www.facebook.com/YeTechSupport">
+                              <span class="fa fa-facebook cicon"></span>
+                            </a>
+                            <a href="mailto:yetech.devs@gmail.com">
+                              <span class="fa fa-google-plus cicon"></span>
+                            </a>
+                            <a href="https://www.facebook.com/YeTech.Devs/">
+                              <span class="fa fa-twitter cicon"></span>
+                            </a>
 
-				  var dist = cdown - now;
+                            <a href="https://www.facebook.com/YeTech.Devs/">
+                              <span class="fa fa-youtube cicon"></span>
+                            </a>
 
-				  var days = Math.floor(dist / (1000 * 60 * 60 * 24));
-				  var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  var minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-				  var seconds = Math.floor((dist % (1000 * 60)) / 1000);
+                        </div>
+                     </center>
 
-				  if(days==2){
-				  	document.getElementById("timed").innerHTML = ' يومين و '+hours+':'+minutes+':'+seconds;
-				  }else if(days==1){
-				  	document.getElementById("timed").innerHTML = ' يوم و '+hours+':'+minutes+':'+seconds;
-				  }else{
-				  	document.getElementById("timed").innerHTML = days+' ايام '+hours+':'+minutes+':'+seconds;
-				  }
-				  if (dist < 0) {
-				    clearInterval(done);}
-				}, 1000);
-				</script>
-		        
-		          <div class="logo-str">
-		            <div class="row nopadding" style="margin:0px">
-		              <div class="col-sm-12">
-		              	<div style="font-family: 'Rakkas', cursive;">مدير الاستراحة <span style="font-size:30px;">(الاصدار الثالث)</span></div>
-		                 <div style="font-family: hdf" class="BigText">EstravahManager</div>
-		                 <div id="timed"></div>
-		              </div>
-	
-		            </div>
+                     </div>
+                     <div style="margin-top: 10px;" >جميع الحقوق محفوظة YeTech (c) 2017</div>
+                     
+                  </div>
+  
+                </div>
 
-		            
-		          </div>
-		      </div>
+                
+              </div>
+             <div class="shadowbg"></div>
+              <div class="splash"></div>
+          </div>
 
-		      <div class="shadowbg"></div>
-		      <div class="splash">
 
-		      </div>
-		    </div>
+        </div>
+    </div>
 		<script src="js/tether.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript">
