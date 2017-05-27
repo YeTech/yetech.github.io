@@ -10,9 +10,8 @@
         <meta http-equiv="cache-control" content="no-tcache">
         <meta http-equiv="content-language" content="en">
         
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
         
         <title>YeTech Developers</title>
 
@@ -68,23 +67,18 @@
         border:none;
       }
       .navbar-default .navbar-nav>li>a{
-        color: #fff;
+        color: #000;
         font-family: cpanel-sego-medium;
       }
       .navbar-default .navbar-nav>li>a:hover{
-        color: #aaa;
+        color: #888;
       }
-      .head-logo{
-        text-align: center;
-        font-size: 53px;
-        font-family: hdf;
-        margin-top: -43px;
-      }
+
       .ara{
         font-family: 'Rakkas', cursive;
       }
       .navbar-default .navbar-brand{
-        color: #fff;
+        color: #333;
         font-family: cpanel-sego-medium;
       }
       .dnbtn{
@@ -108,7 +102,7 @@
         color: #fff;
       }
       .navbar{
-        background: none;
+        background: #fff;
         border: none;
       }
       .cont{
@@ -156,14 +150,29 @@
         padding-top: 80px;
         padding-bottom:80px; 
       }
+      .offerred{
+        position: fixed;
+        background: red;
+        width: 247px;
+        text-align: center;
+        padding: 10px;
+        transform: rotate(36deg);
+        right: -40px;
+        top: 83px;
+        font-size: 13px;
+        font-family: cpanel-sego-bold;
+        z-index: 9;
+      }
     </style>
+   <div class="offerred">عرض رمضاني خصم 25%</div>
    <nav class="navbar navbar-default navbar-fixed-top scroll-nav dark-nav scroll-fixed-nav" role="navigation">
     <div class="container">
       
     
       <div class="navbar-header" style="float: left;">
-        <div class="navbar-brand logo" href="#">
-          YeTech.Developers
+        
+        <div class="navbar-brand logo" href="#" style="margin-left: 21px;">
+          <img style="height: 200%;margin-top: -12px;" src="./imgs/yetech_logo.png">
         </div>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -205,13 +214,12 @@
     $(window).scroll(function(e){
       if($(window).scrollTop()>50){
         $(".navbar").css("position","fixed");
-        $(".navbar").css("background","#232323");
+       
         $(".navbar").css("z-index","9999");
-        $(".navbar").css("border","1px solid #1f1f1f");
+        
       }else{
         $(".navbar").css("position","absolute");
-        $(".navbar").css("background","none");
-        $(".navbar").css("border","none");
+        
       }
     });
   </script>
@@ -252,7 +260,7 @@
           <div class="col-md-7 col-sm-12">
           
             <div class="header-2-img text-center" style=" ">
-              <img src="./imgs/header-1-img.png" alt="" class="img-reponsive" style="width: 158%;margin: 20px;width: 103%;">
+              <img src="./imgs/header-1-img.png" alt="" class="img-reponsive" >
 
             </div>
             
@@ -447,6 +455,7 @@
               text-align: center;
             }
             @media (min-width: 40em) {
+
               .promo {
                 display: inline;
                 float: left;
@@ -530,7 +539,7 @@
                       <h4>ترخيص محلي</h4>
                       <ul class="features">
                           <li class="brief">مناسب للشبكات الصغيرة</li>
-                          <li class="price" style="background: #536747;">$20</li>
+                          <li class="price over" ><div style="text-decoration: line-through;font-size: 19px;margin-top: -11px;margin-bottom: -16px;opacity: 0.5;">$20</div><div >$15</div></li>
                           <li>يمكنك التمتع بكل الخصائص والمميزات</li>
                           <li>دعم متواصل في حال وجود مشاكل</li>
                           <li>تحديثات امنية واصلاحات فقط</li>
@@ -543,7 +552,7 @@
                       <h4>ترخيص نهائي</h4>
                       <ul class="features">
                           <li class="brief">مناسب للشبكات المتوسطة</li>
-                          <li class="price" style="background: #468846;">$30<div class="over">$40</div></li>
+                          <li class="price over" ><div style="text-decoration: line-through;font-size: 19px;margin-top: -11px;margin-bottom: -16px;opacity: 0.5;">$30</div><div >$22</div></li>
                           <li>يمكنك التمتع بكل الخصائص والمميزات</li>
                           <li>دعم متواصل في حال وجود مشاكل</li>
                           <li>تحديثات امنية واصلاحات و اضافات</li>
@@ -556,7 +565,7 @@
                       <h4>نهائي كامل</h4>
                       <ul class="features">
                           <li class="brief">مناسب للشبكات الكبيره</li>
-                          <li class="price">$80<div class="over">$100</div></li>
+                          <li class="price over" ><div style="text-decoration: line-through;font-size: 19px;margin-top: -11px;margin-bottom: -16px;opacity: 0.5;">$80</div><div >$60</div></li>
                           <li>يمكنك التمتع بكل الخصائص والمميزات</li>
                           <li>دعم متواصل في حال وجود مشاكل</li>
                           <li>تحديثات امنية واصلاحات و اضافات</li>
@@ -756,6 +765,12 @@
                      <div>
                      <style type="text/css">
                        @media only screen and (min-width: 700px) {
+                          .head-logo{
+                            text-align: center;
+                            font-size: 53px;
+                            font-family: hdf;
+                            margin-top: -43px;
+                          }
                           .cicon{
                             width: 56px;
                           }
@@ -797,7 +812,34 @@
                           color: #eee;
                         }
                         @media only screen and (max-width: 700px) {
-
+                          .head-logo{
+                            text-align: center;
+                            font-size: 23px;
+                            font-family: hdf;
+                            margin-top: 12px;
+                          }
+                          .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .container{
+                            padding: 0px;
+                            margin:0px; 
+                          }
+                          .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse{
+                            padding: 0px;
+                            margin:0px; 
+                          }
+                          .navbar-toggle{
+                            margin:0px; 
+                            margin-top: 7px;
+                            margin-left: 10px;
+                          }
+                          .img-reponsive{
+                            width: 100%;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                          }
+                          body{
+                              padding-left: 10px;
+                              padding-right: 10px;
+                          }
                           .cicon{
                             width: 93%;
                           }
@@ -848,12 +890,15 @@
 	<script src="js/tether.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		 setTimeout(function(){
-		$(".Loader").fadeOut(function(){
+  $(".Loader").fadeOut(function(){
 
-		});
-	      },5000);
+      });
+		 /*setTimeout(function(){
+  		$(".Loader").fadeOut(function(){
 
+  		});
+	  },5000);
+     */
 	</script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
